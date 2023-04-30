@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.mno.gietmegaaudi.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logoimg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/logo"/>
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logoimg"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:textColor="@color/fore"
+            android:text="GIET Mega Audi"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:textColor="@color/fore"
+        android:text="Gandhi Institute of Engineering and Technology, Gunupur - 765022"/>
+
+
+
+</RelativeLayout>

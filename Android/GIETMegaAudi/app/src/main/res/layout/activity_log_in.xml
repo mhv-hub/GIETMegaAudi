@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.mno.gietmegaaudi.LogInActivity">
+
+    <RelativeLayout
+        android:background="@color/fore"
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <EditText
+            android:singleLine="true"
+            android:maxLength="10"
+            android:paddingLeft="65dp"
+            android:textSize="18dp"
+            android:id="@+id/id"
+            android:gravity="center|left"
+            android:textAllCaps="true"
+            android:background="@drawable/textbox"
+            android:textColor="@color/dark"
+            android:hint="Roll No/Employee ID"
+            android:textColorHint="@color/lightback"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <EditText
+            android:singleLine="true"
+            android:inputType="number"
+            android:textSize="18dp"
+            android:maxLength="4"
+            android:paddingLeft="65dp"
+            android:gravity="center|left"
+            android:layout_below="@+id/id"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/dark"
+            android:hint="OTP"
+            android:background="@drawable/textbox"
+            android:textColorHint="@color/lightback"
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+        <Button
+            android:onClick="logIn"
+            android:layout_below="@+id/pass"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/login"
+            android:text="BOOK YOUR SEAT"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/fore"
+            android:background="@drawable/login_button"
+            android:layout_width="250dp"
+            android:layout_height="40dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:gravity="center|left">
+
+            <ImageView
+                android:id="@+id/ss"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/usericn"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_below="@+id/ss"
+                android:layout_marginTop="30dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/passicn"
+                android:layout_marginLeft="20dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#d1345d</color>
+    <color name="back">#d1345d</color>
+    <color name="lightback">#868585</color>
+    <color name="fore">#e3e3e3</color>
+    <color name="dark">#4f4f4f</color>
+    <color name="bookbut">#c7c6c6</color>
+    <color name="white">#ffffff</color>
+    <color name="slotdet">#666666</color>
+    <color name="red">#d63939</color>
+    <color name="green">#35b122</color>
+</resources>

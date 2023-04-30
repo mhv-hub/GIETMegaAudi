@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fore"
+    tools:context="com.mno.gietmegaaudi.MovieDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/back">
+
+        <ImageView
+            android:id="@+id/iii"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/vidlogo"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:layout_toEndOf="@+id/iii"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Now Showing"
+            android:textSize="20dp"
+            android:textColor="@color/fore"/>
+
+
+
+        <Button
+            android:onClick="showInfo"
+            android:id="@+id/info"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dot_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"/>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/fore">
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"/>
+
+
+
+        <TextView
+            android:background="@color/back"
+            android:id="@+id/movname"
+            android:layout_below="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/fore"
+            android:textSize="18dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="275dp"
+        android:layout_marginBottom="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel1"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/curveback"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/head1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/back"/>
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/slot1"
+                    android:layout_below="@+id/rel1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/ic"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/icn"
+                        android:layout_alignParentLeft="true"/>
+
+                    <RelativeLayout
+                        android:gravity="center|left"
+                        android:layout_toEndOf="@+id/ic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/slot1t1"
+                        android:gravity="left"
+                        android:textColor="@color/slotdet"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/slot1t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/slot1t2"
+                        android:gravity="left"
+                        android:textColor="@color/slotdet"
+                        android:textSize="12dp"/>
+
+                        </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel2"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/slot1"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/curveback2"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/head2"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/back"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel3"
+                    android:layout_below="@+id/rel2"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/icn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/icn"
+                        android:layout_alignParentLeft="true"/>
+
+                    <RelativeLayout
+                        android:gravity="center|left"
+                        android:layout_toEndOf="@+id/icn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/slot2t1"
+                        android:gravity="left"
+                        android:textColor="@color/slotdet"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/slot2t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/slot2t2"
+                        android:gravity="left"
+                        android:textColor="@color/slotdet"
+                        android:textSize="12dp"/>
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel4"
+                    android:layout_below="@+id/rel3"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/icnn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/icn"
+                        android:layout_alignParentLeft="true"/>
+
+                    <RelativeLayout
+                        android:gravity="center|left"
+                        android:layout_toEndOf="@+id/icnn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/slot3t1"
+                        android:gravity="left"
+                        android:textColor="@color/slotdet"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/slot3t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/slot3t2"
+                        android:gravity="left"
+                        android:textColor="@color/slotdet"
+                        android:textSize="12dp"/>
+
+                        </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel5"
+                    android:layout_below="@+id/rel4"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/icnnn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/icn"
+                        android:layout_alignParentLeft="true"/>
+
+                    <RelativeLayout
+                        android:gravity="center|left"
+                        android:layout_toEndOf="@+id/icnnn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/slot4t1"
+                        android:gravity="left"
+                        android:textColor="@color/slotdet"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/slot4t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/slot4t2"
+                        android:gravity="left"
+                        android:textColor="@color/slotdet"
+                        android:textSize="12dp"/>
+
+                        </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/rel5"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/icnnnn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/icn"
+                        android:layout_alignParentLeft="true"/>
+
+                    <RelativeLayout
+                        android:gravity="center|left"
+                        android:layout_toEndOf="@+id/icnnnn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/slot5t1"
+                        android:gravity="left"
+                        android:textColor="@color/slotdet"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/slot5t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/slot5t2"
+                        android:gravity="left"
+                        android:textColor="@color/slotdet"
+                        android:textSize="12dp"/>
+
+                        </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:background="@color/back"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/back"
+        android:textStyle="bold"
+        android:background="@drawable/book_button"
+        android:text="BOOK YOUR TICKET NOW"/>
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:background="@color/fore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</RelativeLayout>

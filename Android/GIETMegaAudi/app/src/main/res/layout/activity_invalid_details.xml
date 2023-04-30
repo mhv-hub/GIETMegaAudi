@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/curveback3"
+    tools:context="com.mno.gietmegaaudi.InvalidDetailsActivity">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/aaa"
+            android:background="@drawable/error"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/bbb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:textColor="@color/back"
+            android:layout_below="@+id/aaa"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="INVALID USER ID OR OTP"/>
+
+
+        <Button
+            android:layout_below="@+id/bbb"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ok"
+            android:shadowColor="@color/bookbut"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/back"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:text="TRY AGAIN"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
